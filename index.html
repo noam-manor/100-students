@@ -1,0 +1,112 @@
+<!-- Copyright 2017 Tom Shanley
+forked from http://blockbuilder.org/tomshanley/a94a879c8d28e302ac2b89228f9bd1f7
+by Tom Shanley 
+
+person icon created by William Dayabaran, obtained from the Noun Project, https://thenounproject.com/search/?q=human%20figure&i=350163
+-->
+
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- Bootstrap -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- end Bootstrap -->
+	<style>
+
+        body {
+            font-family: 'Comfortaa';
+			color: #46535E;
+            text-align: center;
+            margin: auto
+        }
+
+        .labels {
+            text-anchor: middle;
+			font-size: 24px;
+			font-family: 'Indie Flower';
+        }
+
+		.title {
+           font-size: 27px;
+		   font-family: 'Indie Flower';
+		   text-anchor: middle;
+		   text-align: center;
+        }
+		
+        select {
+            font-size: 12px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        circle {
+            opacity: 0.7
+        }
+
+		.btn-outline-primary-sm {
+			font-size: 10px;		
+		}
+		
+		#story-buttons {
+			font-size: 16px;
+			border-color: red;	
+			margin-left: 0px; 
+			margin-top:0px; 
+			margin-bottom: 0px;
+			padding-top: 0px;
+			padding-right: 10px;
+			padding-bottom: 0px;
+			padding-left: 0px;
+			margin: 0 auto;
+		}
+
+	.container{
+        display:flex;
+	}
+		
+    </style>
+</head>
+
+<body>
+
+    <!-- <h1>Of every 100 undergraduate students on campus...</h1> -->
+
+	<div id="chart"></div>    
+	
+<div class="container">  
+ 
+	<div id="story-buttons" aria-label="item">
+	  <button id="Female" type="button" class="btn btn-outline-primary-sm btn-block" onClick="dispatchButton('Female');">Female</button>
+	  <button id="Male" type="button" class="btn btn-outline-primary-sm btn-block" onClick="dispatchButton('Male');">Male</button>
+  	  <button id="Underrepresented Minorities" type="button" class="btn btn-outline-primary-sm btn-block" onClick="dispatchButton('Underrepresented Minorities');">Underrepresented Minorities</button>
+	  <button id="One-Year Retention (freshman)" type="button" class="btn btn-outline-primary-sm btn-block" onClick="dispatchButton('One-Year Retention (freshman)');">One-Year Retention (freshman)</button>
+	</div>
+ 
+</div>
+  
+<!--     <p>Choose category</p>
+    <div id="select-div"></div>
+    <p>&nbsp</p> -->
+    
+	<!-- <p>Source: <a href="http://www.100people.org/statistics_100stats.php?section=statistics">100People.org</a> and <a href="http://www.makeovermonday.co.uk/data/">Makeover Monday</a></p> -->
+<!--     <p>People icon made by <a href="https://www.flaticon.com/authors/freepik">freepik</a> from Flaticon</p>
+ -->
+<br>
+ <p>People icon created by William Dayabaran, obtained from the <a href="https://thenounproject.com/search/?q=human%20figure&i=350163">Noun Project</a></p>
+
+</div>
+
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+	
+</body>
